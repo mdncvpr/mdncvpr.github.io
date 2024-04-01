@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Uncertainty-Guided Never-Ending Learning to Drive</title>
+  <title>Motion Diversification Networks</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,18 +52,13 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Uncertainty-Guided Never-Ending Learning to Drive</h1>
+            <h1 class="title is-1 publication-title">Motion Diversification Networks</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Lei Lai</a>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">John Seon Keun Yi</a>,</span>
+                <a href="https://hee-jae-kim.github.io/" target="_blank">Hee Jae Kim</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Sanjay Arora</a>,
-                  </span>
-                  <span class="author-block">
-                    <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Eshed Ohn-Bar</a>
+                    <a href="https://eshed1.github.io/" target="_blank">Eshed Ohn-Bar</a>
                   </span>
                   </div>
 
@@ -71,7 +66,7 @@
                     <span class="author-block">Boston University<br>CVPR 2024</span>
                   </div>
 
-                  <div class="column has-text-centered">
+<!--                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
@@ -113,7 +108,9 @@
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
+
+                    
                 </a>
               </span>
             </div>
@@ -150,7 +147,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            We introduce Motion Diversification Networks, a novel framework for learning to generate realistic and diverse 3D human motion. Despite recent advances in deep generative motion modeling, existing models often fail to produce samples that capture the full range of plausible and natural 3D human motion within a given context. The lack of diversity becomes even more apparent in applications where subtle and multi-modal 3D human forecasting is crucial for safety, such as robotics and autonomous driving. Towards more realistic and functional 3D motion models, we highlight limitations in existing generative modeling techniques, particularly in overly simplistic latent code sampling strategies. We then introduce a transformer-based diversification mechanism that learns to effectively guide sampling in the latent space. Our proposed attention-based module queries multiple stochastic samples to flexibly predict a diverse set of latent codes which can be subsequently decoded into motion samples. The proposed framework achieves state-of-the-art diversity and accuracy prediction performance across a range of benchmarks and settings, particularly when used to forecast intricate in-the-wild 3D human motion within complex urban environments.
           </p>
         </div>
       </div>
