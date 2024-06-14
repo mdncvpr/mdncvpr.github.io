@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Uncertainty-Guided Never-Ending Learning to Drive.">
-  <meta name="keywords" content="Uncertainty-Guided Never-Ending Learning to Drive">
+        content="Motion Diversification Networks.">
+  <meta name="keywords" content="Motion Diversification Networks">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Uncertainty-Guided Never-Ending Learning to Drive</title>
+  <title>Motion Diversification Networks</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -89,21 +89,16 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Uncertainty-Guided Never-Ending Learning to Drive</h1>
+          <h1 class="title is-1 publication-title">Motion Diversification Networks</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://leilai125.github.io/">Lei Lai</a>,</span>
+              <a href="https://hee-jae-kim.github.io/">Hee Jae Kim</a>,</span>
             <span class="author-block">
               <a href="https://eshed1.github.io/">Eshed Ohn-Bar</a>,</span>
-            <span class="author-block">
-              <a href="https://research.redhat.com/blog/project_member/sanjay-arora/">Sanjay Arora</a><sup>&dagger;</sup>,</span>
-            <span class="author-block">
-              <a href="https://johnsk95.github.io/">John Seon Keun Yi</a>,</span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">Boston University,</span>
-            <span class="author-block"><sup>&dagger;</sup>Red Hat Inc.</span>
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -114,7 +109,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Lai_Uncertainty-Guided_Never-Ending_Learning_to_Drive_CVPR_2024_paper.pdf"
+                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Kim_Motion_Diversification_Networks_CVPR_2024_paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -124,7 +119,7 @@
               </span>
 
               <span class="link-block">
-                <a href="https://leilai125.github.io/papers/infinity-driver-supp.pdf"
+                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Kim_Motion_Diversification_Networks_CVPR_2024_paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -154,7 +149,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Lai_Uncertainty-Guided_Never-Ending_Learning_to_Drive_CVPR_2024_paper.pdf"
+                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Kim_Motion_Diversification_Networks_CVPR_2024_paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -163,15 +158,15 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Lai_Uncertainty-Guided_Never-Ending_Learning_to_Drive_CVPR_2024_paper.pdf"
+<!--               <span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Kim_Motion_Diversification_Networks_CVPR_2024_paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
                   </a>
-              </span>
+              </span> -->
             </div>
 
           </div>
@@ -181,36 +176,6 @@
   </div>
 </section>
 
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/infydriver.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">&infin;-Driver</span> an agent that continually learns from unlabeled incoming video data.
-      </h2>
-    </div>
-  </div>
-</section> -->
-
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3"> </h2>
-        <div class="content has-text-justified">
-          <p>
-          </p>
-          <div class="column">
-            <img src="./static/images/infdriver.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -219,225 +184,31 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present a highly scalable self-training framework for incrementally adapting vision-based end-to-end autonomous driving policies in a semi-supervised manner, i.e., over a continual stream of incoming video data. To facilitate large-scale model training (e.g., open web or unlabeled data), we do not assume access to ground-truth labels and instead estimate pseudo-label policy targets for each video. Our framework comprises three key components: knowledge distillation, a sample purification module, and an exploration and knowledge retention mechanism. First, given sequential image frames, we pseudo-label the data and estimate uncertainty using an ensemble of inverse dynamics models. The uncertainty is used to select the most informative samples to add to an experience replay buffer. We specifically select high-uncertainty pseudo-labels to facilitate the exploration and learning of new and diverse driving skills. However, in contrast to prior work in continual learning that assumes ground-truth labeled samples, the uncertain pseudo-labels can introduce significant noise. Thus, we also pair the exploration with a label refinement module, which makes use of consistency constraints to re-label the noisy exploratory samples and effectively learn from diverse data. Trained as a complete never-ending learning system, we demonstrate state-of-the-art performance on training from domain-changing data as well as millions of images from the open web. 
+            We introduce Motion Diversification Networks, a novel framework for learning to generate realistic and diverse 3D human motion. Despite recent advances in deep generative motion modeling, existing models often fail to produce samples that capture the full range of plausible and natural 3D human motion within a given context. The lack of diversity becomes even more apparent in applications where subtle and multi-modal 3D human forecasting is crucial for safety, such as robotics and autonomous driving. Towards more realistic and functional 3D motion models, we highlight limitations in existing generative modeling techniques, particularly in overly simplistic latent code sampling strategies. We then introduce a transformer-based diversification mechanism that learns to effectively guide sampling in the latent space. Our proposed attention-based module queries multiple stochastic samples to flexibly predict a diverse set of latent codes which can be subsequently decoded into motion samples. The proposed framework achieves state-of-the-art diversity and accuracy prediction performance across a range of benchmarks and settings, particularly when used to forecast intricate in-the-wild 3D human motion within complex urban environments. 
           </p>
         </div>
       </div>
     </div>
 
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-  </div>
-</section>
-
-
 <section class="section">
   <div class="container">
-
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          We present &infin;-Driver, an agent that continually learns from unlabeled incoming video data. For each video in the video stream, the agent employs an ensemble of inverse dynamics models to infer waypoint pseudo-labels and their uncertainty (higher uncertainty is depicted in red). Noisy pseudo-labels are automatically refined through consistency-based re-labeling and confidence-based filtering. Next, a driving policy student model is trained over incoming and episodic memory replay data. The memory buffer is updated to incorporate high-uncertainty samples. This maintains a diverse set of samples to retain knowledge and prevent forgetting, despite only viewing a given image once. Towards learning a generalized driving policy, our efficient framework enables highly scalable training, i.e., over millions of video frames from the web.
+          Method
           </p>
-          <!--
-          <ol>
-            <li>We first train an ego-motion prediction teacher model over a small initial dataset, e.g., nuScenes</li>
-
-            <li>We then expand the original dataset through pseudo-labeling of in-the-wild videos.</li>
-
-            <li>we employ multiple auxiliary prediction tasks, including segmentation, flow, depth, and audio, as part of the semi-supervised training process</li>
-
-            <li>We leverage uncertainty-based filtering of potentially noisy pseudo labels and train a robust student model.</li>
-          </ol>
-          -->
-          
         </div>
         <div class="column">
-          <img src="./static/images/infdriver.png" width="80%" />
+          <img src="./data/architecture.png" width="80%" />
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
 
 <section class="section">
   <div class="container">
@@ -446,15 +217,11 @@
         <h2 class="title is-3">Result</h2>
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          <b>Evaluation of Incremental Learning Over Cities.</b> 
-          We present the results of incremental learning on image collections sorted by cities with varying buffer sizes: 3,000, 6,000, and 9,000. 
-          L<sub>−1</sub>, F<sub>−1</sub>, I<sub>−1</sub> represents the evaluations after the model trains on the last image collection. Our &infin;-Driver outperforms other baselines across all metrics and exhibits a significant advantage on the Average Loss and Forgetting measures compared to other baseline models, especially on buffer sizes 3,000 and 6,000. 
-          This indicates that our filter mechanism and temporal consistency re-labeling method can effectively remove and refine noisy samples. Additionally, it demonstrates that our uncertainty-based buffer sampling method can select more informative samples into the buffer. 
-          Thus, our buffer is enriched with more informative samples and less misleading labels. It enhances the model’s ability to retain previously acquired knowledge without hindering the model from learning new incoming knowledge.
+          <b>Evaluation on Humanm3.6M</b> 
           </p>
         </div>
         <div class="column">
-          <img src="./static/images/table_over_cities.png" width="100%" />
+          <img src="./static/images/eval_H36M.png" width="100%" />
         </div>
       </div>
     </div>
@@ -468,16 +235,11 @@
         <!-- <h2 class="title is-3">Result</h2> -->
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          <b>Evaluation of Incremental Learning on Open Web Data.</b> 
-          To further demonstrate the generalization ability of &infin;-Driver, we conduct open web experiments that continuously train on the YouTube dataset. 
-          It is important to note that all samples within the evaluation set are <i> entirely unseen </i> to &infin;-Driver before evaluation.
-          We present the revised Average Loss, Forgetting, and ADE measured on the evaluation set after the model completes the final training phase.
-          &infin;-Driver obtains the best result on Forgetting, which indicates that the model’s final performance on the evaluation set essentially matches the model’s best performance. 
-          The lowest Average Loss and ADE demonstrate that the model exhibits best generalization capabilities among the analyzed models.
+          <b>Evaluation on HPS and 3DPW</b> 
           </p>
         </div>
         <div class="column">
-          <img src="./static/images/table_open_web.png" width="50%" />
+          <img src="./static/images/eval_Realworld.png" width="50%" />
         </div>
       </div>
     </div>
@@ -491,14 +253,11 @@
         <!-- <h2 class="title is-3">Result</h2> -->
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          <b>Qualitative Analysis of Incremental Learning Over Cities.</b> 
-          We shows the ADE scores on each city’s hold-out evaluation set. 
-          Performance is measured after the model has completed training on the last city’s image collection. 
-          According to the figure, we demonstrate that after incrementally training over ten cities, our &infin;-Driver consistently outperforms other baseline models in each city under all buffer settings.
+          <b>Evaluation on DenseCity</b> 
           </p>
         </div>
         <div class="column">
-          <img src="./static/images/fig_over_cities.png" width="100%" />
+          <img src="./eval_Densecity.png" width="50%" />
         </div>
       </div>
     </div>
@@ -509,29 +268,9 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <!-- <h2 class="title is-3">Result</h2> -->
-        <div class="content has-text-justified">
-          <p class="my-paragraph">
-          <b>Qualitative Analysis on Open Web Data.</b> 
-          We displays the trend of ADE score as &infin;-Driver incrementally trained on YouTube data. We plot the trend by selecting the ADE scores measured after the model has seen 2, 4, 6, 8, and 10 million images. 
-          <!-- There is a significant gap between our method and other baselines. -->
-          </p>
-        </div>
-        <div class="column">
-          <img src="./static/images/fig_open_web.png" width="50%" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Qualitative Examples</h2>
+        <h2 class="title is-3">Supplementary Video</h2>
           <video controls>
-          <source src="./static/videos/infydriver.mp4" type="video/mp4">
+          <source src="./data/MDN.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -544,8 +283,7 @@
       <div class="column">
         <h2 class="title is-3">Acknowledgments</h2>
         <div class="content has-text-centered">
-          We thank the Red Hat Collaboratory (awards #2024-01-RH02, #2024-01-RH07) and NSF (IIS-2152077) for supporting this research.
-
+          We thank the Rafik B. Hariri Institute for Computing and Computational Science and Engineering (Focused Research Program award \#2023-07-001) and the National Science Foundation (IIS-2152077) for supporting this research.
         </div>
       </div>
     </div>
