@@ -198,9 +198,9 @@
         <div class="content has-text-justified">
           <p class="my-paragraph">
           <p><b>z-transformer:</b> We employ an attention-based diversification module to produce a diverse set of latent vectors that expressively model correlations among multiple samples and modes. </p>
-          <p><b>zMotion Primitives:</b> To guide sample diversity and reduce modeling complexity in diverse scenarios, we incorporate deterministic motion primitives (centroids of clusters in the 3D pose space). </p>
-          <p><b>zScene and Social Context:</b> We use the transformer architecture to easily fuse in additional context, i.e., as keys and values in the z-transformer.</p>
-          <p><b>zDense Urban Navigation Benchmark:</b> Prior datasets (e.g., Human3.6M, AMASS, and HumanML3D) are limited to static indoor settings. We introduce DenseCity, a simulation benchmark with dense pedestrians. We also use YouTube, which helps further address the current gap between simulated, generated, and realistic 3D human motion.</p>
+          <p><b>Motion Primitives:</b> To guide sample diversity and reduce modeling complexity in diverse scenarios, we incorporate deterministic motion primitives (centroids of clusters in the 3D pose space). </p>
+          <p><b>Scene and Social Context:</b> We use the transformer architecture to easily fuse in additional context, i.e., as keys and values in the z-transformer.</p>
+          <p><b>Dense Urban Navigation Benchmark:</b> Prior datasets (e.g., Human3.6M, AMASS, and HumanML3D) are limited to static indoor settings. We introduce DenseCity, a simulation benchmark with dense pedestrians. We also use YouTube, which helps further address the current gap between simulated, generated, and realistic 3D human motion.</p>
           </p>
         </div>
         <div class="column">
@@ -221,6 +221,7 @@
         <div class="content has-text-justified">
           <p class="my-paragraph">
           <b>Evaluation on Humanm3.6M</b> 
+          Our method achieves the best-known performance on the Human3.6M benchmark in terms of sample diversity without sacrificing prediction accuracy.
           </p>
         </div>
         <div class="column">
@@ -239,6 +240,7 @@
         <div class="content has-text-justified">
           <p class="my-paragraph">
           <b>Evaluation on HPS and 3DPW</b> 
+          Our model shows state-of-the-art results, in terms of diversity and accuracy, for two additional real-world benchmarks. Moreover, our model benefits from diverse data. Specifically, the addition of human motion trajectories extracted from in-the-wild videos (full details in our supplementary) is shown to further improve realism and diversity.
           </p>
         </div>
         <div class="column">
@@ -257,6 +259,7 @@
         <div class="content has-text-justified">
           <p class="my-paragraph">
           <b>Evaluation on DenseCity</b> 
+          Results are shown in terms of diversity (APD) and accuracy (ADE, FDE) against several baselines for both 3D pose and 2D trajectory error over a \textbf{two seconds future prediction} task.
           </p>
         </div>
         <div class="column">
