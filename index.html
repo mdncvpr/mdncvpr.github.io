@@ -197,11 +197,14 @@
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
           <p class="my-paragraph">
-          Method
+          <p><b>z-transformer:</b> We employ an attention-based diversification module to produce a diverse set of latent vectors that expressively model correlations among multiple samples and modes. </p>
+          <p><b>zMotion Primitives:</b> To guide sample diversity and reduce modeling complexity in diverse scenarios, we incorporate deterministic motion primitives (centroids of clusters in the 3D pose space). </p>
+          <p><b>zScene and Social Context:</b> We use the transformer architecture to easily fuse in additional context, i.e., as keys and values in the z-transformer.</p>
+          <p><b>zDense Urban Navigation Benchmark:</b> Prior datasets (e.g., Human3.6M, AMASS, and HumanML3D) are limited to static indoor settings. We introduce DenseCity, a simulation benchmark with dense pedestrians. We also use YouTube, which helps further address the current gap between simulated, generated, and realistic 3D human motion.</p>
           </p>
         </div>
         <div class="column">
-          <img src="./data/architecture.png" width="80%" />
+          <img src="./data/architecture.png" width="90%" />
         </div>
       </div>
     </div>
